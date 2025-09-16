@@ -1,0 +1,93 @@
+🔹 File & Directory Navigation
+pwd              # Show current directory
+ls               # List files
+ls -l            # List with details (permissions, owner, size, date)
+ls -a            # Show hidden files
+cd dirname       # Change directory
+cd ..            # Go up one directory
+cd ~             # Go to home directory
+
+🔹 File & Directory Management
+touch file.txt        # Create empty file
+mkdir dir             # Create directory
+mkdir -p a/b/c        # Create nested directories
+cp file1 file2        # Copy file
+cp -r dir1 dir2       # Copy directory
+mv file1 newname      # Rename file
+mv file1 dir/         # Move file
+rm file.txt           # Remove file
+rm -r dir             # Remove directory and contents
+
+
+🔹 Viewing & Editing Files
+cat file.txt          # Show file contents
+less file.txt         # View file (scrollable)
+head file.txt         # First 10 lines
+head -n 20 file.txt   # First 20 lines
+tail file.txt         # Last 10 lines
+tail -f file.txt      # Follow file (logs)
+nano file.txt         # Edit file (beginner-friendly editor)
+vim file.txt          # Edit file (advanced editor)
+
+🔹 Searching
+grep "text" file.txt     # Search text in file
+grep -r "text" dir/      # Search text in directory
+find . -name "*.txt"     # Find all .txt files in current directory
+
+🔹 Permissions
+ls -l              # Check file permissions
+chmod 755 file     # Change permissions (rwxr-xr-x)
+chmod u+x script   # Give execute permission to user
+chown user:group file   # Change owner and group
+
+🔹 System Info
+whoami             # Show current user
+uname -a           # System info
+df -h              # Disk usage
+du -sh dir         # Directory size
+free -h            # Memory usage
+top                # Running processes
+htop               # Better process viewer (if installed)
+
+🔹 Process Management
+ps                 # Show processes
+ps aux             # Show all processes
+kill PID           # Kill process by PID
+kill -9 PID        # Force kill process
+
+🔹 Users & Groups
+adduser username   # Add new user
+passwd username    # Change password
+su username        # Switch user
+who                # Show logged in users
+groups             # Show user groups
+
+🔹 Networking
+ping google.com         # Test connection
+curl example.com        # Fetch web page
+wget url                # Download file
+ifconfig (or ip a)      # Show network interfaces
+netstat -tulnp          # Show open ports
+
+🔹 Package Management
+sudo apt update          # Refresh packages
+sudo apt upgrade         # Upgrade packages
+sudo apt install pkg     # Install package
+sudo apt remove pkg      # Remove package
+
+🔹 Archive & Compression
+tar -cvf file.tar dir/     # Create tar archive
+tar -xvf file.tar          # Extract tar archive
+tar -czvf file.tar.gz dir/ # Create compressed tar.gz
+tar -xzvf file.tar.gz      # Extract tar.gz
+zip file.zip file.txt      # Create zip
+unzip file.zip             # Extract zip
+
+🔹 Others
+history            # Show command history
+clear              # Clear terminal
+man cmd            # Show help for command
+date               # Show date & time
+cal                # Show calendar
+echo "Hello"       # Print text
+

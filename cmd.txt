@@ -1,0 +1,96 @@
+Starting & Exiting
+vim filename       # Open file
+vim file1 file2    # Open multiple files
+
+:w → Save
+:q → Quit
+:wq / ZZ → Save & quit
+:q! → Quit without saving
+:x → Save & quit (like :wq)
+
+🔹 Modes
+
+i → Insert before cursor
+I → Insert at beginning of line
+a → Append after cursor
+A → Append at end of line
+o → Open new line below
+O → Open new line above
+Esc → Back to Normal mode
+
+🔹 Navigation
+h → Left
+l → Right
+j → Down
+k → Up
+0 → Beginning of line
+^ → First non-space character
+$ → End of line
+w → Next word
+e → End of word
+b → Previous word
+gg → Top of file
+G → Bottom of file
+:n → Go to line n
+Ctrl + f → Page down
+Ctrl + b → Page up
+
+🔹 Editing / Deleting
+
+x → Delete character
+X → Delete before cursor
+dw → Delete word
+dd → Delete line
+D → Delete to end of line
+:n,m d → Delete lines n to m
+
+🔹 Copy & Paste
+
+yy → Copy line
+yw → Copy word
+p → Paste after cursor
+P → Paste before cursor
+
+🔹 Undo / Redo
+
+u → Undo
+Ctrl + r → Redo
+
+🔹 Search / Replace
+/word → Search forward for "word"
+?word → Search backward
+n → Next search result
+N → Previous search result
+:%s/old/new/g → Replace all
+:n,m s/old/new/g → Replace between lines n–m
+
+🔹 Visual Mode (Selection)
+v → Character-wise select
+V → Line-wise select
+Ctrl + v → Block-wise select
+y → Copy selected text
+d → Delete selected text
+> / < → Indent left/right
+
+🔹 Multiple Files & Buffers
+:e file → Open new file
+:bn → Next buffer
+:bp → Previous buffer
+:bd → Close buffer
+
+🔹 Splits & Tabs
+:split file/sp → Horizontal split 
+:vsplit file/vs → Vertical split
+Ctrl + w, w → Switch window
+Ctrl + w, q → Close split
+:tabnew file → Open in new tab
+gt → Next tab
+gT → Previous tab
+
+🔹 Useful Shortcuts
+. → Repeat last command
+:%y+ → Copy entire file to system clipboard
+:set number → Show line numbers
+:set nonumber → Hide line numbers
+:syntax on → Enable syntax highlighting
+:set paste → Disable auto-indent when pasting
