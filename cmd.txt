@@ -1,6 +1,8 @@
 Starting & Exiting
 vim filename       # Open file
 vim file1 file2    # Open multiple files
+vim -o (file1 name) (file2 name) → open with spilt horizontal windows
+vim -O (file1 name) (file2 name) → open with spit virtical windows    
 
 :w → Save
 :q → Quit
@@ -73,6 +75,7 @@ d → Delete selected text
 > / < → Indent left/right
 
 🔹 Multiple Files & Buffers
+:badd (file name) → open file in buffer without switch  
 :e file → Open new file
 :bn → Next buffer
 :bp → Previous buffer
@@ -94,3 +97,8 @@ gT → Previous tab
 :set nonumber → Hide line numbers
 :syntax on → Enable syntax highlighting
 :set paste → Disable auto-indent when pasting
+
+config file
+vim .vimrc 
+vim +20 (file name) -- open file at that line number
+
